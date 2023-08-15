@@ -2,6 +2,12 @@
 
 return [
 
+    'navigation' => [
+        'should_register' => true,
+        'sort' => -1,
+        'group' => null,
+    ],
+
     'abilities' => [
         'users:read' => 'Read User',
         'users:create' => 'Create User',
@@ -12,6 +18,11 @@ return [
         'blog:update' => 'Update Blog',
         'blog:delete' => 'Delete Blog',
     ],
+
     'columns' => 4,
+    'navigation_menu' => true,
+    'user_menu' => false,
+    'label' => 'Sanctum',
+    'slug' => 'sanctum',
 
 ];
